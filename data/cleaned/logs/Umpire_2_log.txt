@@ -4,7 +4,7 @@
 
 <class 'pandas.core.frame.DataFrame'>
 Index: 53621 entries, 0 to 53624
-Data columns (total 32 columns):
+Data columns (total 31 columns):
  #   Column              Non-Null Count  Dtype  
 ---  ------              --------------  -----  
  0   balls               53621 non-null  int64  
@@ -17,59 +17,58 @@ Data columns (total 32 columns):
  7   zone                53621 non-null  float64
  8   stand               53621 non-null  object 
  9   p_throws            53621 non-null  object 
- 10  game_year           53621 non-null  int64  
- 11  pfx_x               53621 non-null  float64
- 12  pfx_z               53621 non-null  float64
- 13  plate_x             53621 non-null  float64
- 14  plate_z             53621 non-null  float64
- 15  error_in_decision   53621 non-null  object 
- 16  pitch_location      53621 non-null  float64
- 17  delta_home_win_exp  53621 non-null  float64
- 18  delta_run_exp       53621 non-null  float64
- 19  vx0                 53621 non-null  float64
- 20  vy0                 53621 non-null  float64
- 21  vz0                 53621 non-null  float64
- 22  ax                  53621 non-null  float64
- 23  ay                  53621 non-null  float64
- 24  az                  53621 non-null  float64
- 25  sz_top              53621 non-null  float64
- 26  sz_bot              53621 non-null  float64
- 27  release_pos_y       53621 non-null  float64
- 28  pitch_number        53621 non-null  int64  
- 29  home_score          53621 non-null  int64  
- 30  away_score          53621 non-null  int64  
- 31  all_star_player     53621 non-null  float64
-dtypes: float64(21), int64(6), object(5)
-memory usage: 13.5+ MB
+ 10  pfx_x               53621 non-null  float64
+ 11  pfx_z               53621 non-null  float64
+ 12  plate_x             53621 non-null  float64
+ 13  plate_z             53621 non-null  float64
+ 14  error_in_decision   53621 non-null  object 
+ 15  pitch_location      53621 non-null  float64
+ 16  delta_home_win_exp  53621 non-null  float64
+ 17  delta_run_exp       53621 non-null  float64
+ 18  vx0                 53621 non-null  float64
+ 19  vy0                 53621 non-null  float64
+ 20  vz0                 53621 non-null  float64
+ 21  ax                  53621 non-null  float64
+ 22  ay                  53621 non-null  float64
+ 23  az                  53621 non-null  float64
+ 24  sz_top              53621 non-null  float64
+ 25  sz_bot              53621 non-null  float64
+ 26  release_pos_y       53621 non-null  float64
+ 27  pitch_number        53621 non-null  int64  
+ 28  home_score          53621 non-null  int64  
+ 29  away_score          53621 non-null  int64  
+ 30  all_star_player     53621 non-null  float64
+dtypes: float64(21), int64(5), object(5)
+memory usage: 13.1+ MB
 
 
 --- Head ---
-   balls  strikes pitch_type  release_speed  release_pos_x  release_pos_z    description  zone stand p_throws  game_year  pfx_x  pfx_z  plate_x  plate_z error_in_decision  pitch_location  delta_home_win_exp  delta_run_exp       vx0         vy0       vz0      ax      ay      az  sz_top  sz_bot  release_pos_y  pitch_number  home_score  away_score  all_star_player
-0      0        0         SI           83.0          -1.30           6.58           ball  11.0     L        R       2008  -1.16   1.46    -1.22     2.67           correct           0.389                 0.0          0.035  2.837675 -121.767603 -4.463783 -11.603  28.628 -17.410    3.28    1.62           54.5             1           0           0              1.0
-1      1        0         SI           83.4          -1.19           6.48           ball  14.0     L        R       2008  -1.16   1.15     0.92     1.91           correct           0.089                 0.0          0.068  7.491243 -122.088354 -5.334191 -12.703  28.455 -20.039    3.28    1.62           54.5             2           0           0              1.0
-2      2        0         FF           82.4          -1.21           6.47           ball   7.0     L        R       2008  -0.86   1.35    -0.42     1.83         incorrect           0.210                 0.0          0.137  3.741971 -120.796594 -5.731990  -8.819  28.159 -18.308    3.28    1.62           54.5             3           0           0              1.0
-3      3        0         FF           81.6          -1.31           6.57  called_strike   5.0     L        R       2008  -0.77   1.59    -0.21     2.51           correct           0.621                 0.0         -0.080  4.198498 -119.696214 -4.765346  -7.932  27.364 -16.623    3.28    1.62           54.5             4           0           0              1.0
-4      0        0         SI           84.9          -1.30           6.55           ball  14.0     R        R       2008  -0.99   1.41     1.37     1.96           correct           0.520                 0.0          0.023  8.551403 -124.144139 -6.412107 -11.661  27.535 -16.840    3.17    1.44           54.5             1           0           0              1.0
+   balls  strikes pitch_type  release_speed  release_pos_x  release_pos_z    description  zone stand p_throws  pfx_x  pfx_z  plate_x  plate_z error_in_decision  pitch_location  delta_home_win_exp  delta_run_exp       vx0         vy0       vz0      ax      ay      az  sz_top  sz_bot  release_pos_y  pitch_number  home_score  away_score  all_star_player
+0      0        0         SI           83.0          -1.30           6.58           ball  11.0     L        R  -1.16   1.46    -1.22     2.67           correct           0.389                 0.0          0.035  2.837675 -121.767603 -4.463783 -11.603  28.628 -17.410    3.28    1.62           54.5             1           0           0              1.0
+1      1        0         SI           83.4          -1.19           6.48           ball  14.0     L        R  -1.16   1.15     0.92     1.91           correct           0.089                 0.0          0.068  7.491243 -122.088354 -5.334191 -12.703  28.455 -20.039    3.28    1.62           54.5             2           0           0              1.0
+2      2        0         FF           82.4          -1.21           6.47           ball   7.0     L        R  -0.86   1.35    -0.42     1.83         incorrect           0.210                 0.0          0.137  3.741971 -120.796594 -5.731990  -8.819  28.159 -18.308    3.28    1.62           54.5             3           0           0              1.0
+3      3        0         FF           81.6          -1.31           6.57  called_strike   5.0     L        R  -0.77   1.59    -0.21     2.51           correct           0.621                 0.0         -0.080  4.198498 -119.696214 -4.765346  -7.932  27.364 -16.623    3.28    1.62           54.5             4           0           0              1.0
+4      0        0         SI           84.9          -1.30           6.55           ball  14.0     R        R  -0.99   1.41     1.37     1.96           correct           0.520                 0.0          0.023  8.551403 -124.144139 -6.412107 -11.661  27.535 -16.840    3.17    1.44           54.5             1           0           0              1.0
 
 --- Describe ---
-               balls       strikes pitch_type  release_speed  release_pos_x  release_pos_z description          zone  stand p_throws     game_year         pfx_x         pfx_z       plate_x       plate_z error_in_decision  pitch_location  delta_home_win_exp  delta_run_exp           vx0           vy0           vz0            ax            ay            az        sz_top        sz_bot  release_pos_y  pitch_number    home_score    away_score  all_star_player
-count   53621.000000  53621.000000      53621   53621.000000   53621.000000   53621.000000       53621  53621.000000  53621    53621  53621.000000  53621.000000  53621.000000  53621.000000  53621.000000             53621    53621.000000        53621.000000   53621.000000  53621.000000  53621.000000  53621.000000  53621.000000  53621.000000  53621.000000  53621.000000  53621.000000   53621.000000  53621.000000  53621.000000  53621.000000     53621.000000
-unique           NaN           NaN         16            NaN            NaN            NaN           2           NaN      2        2           NaN           NaN           NaN           NaN           NaN                 2             NaN                 NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN            NaN           NaN           NaN           NaN              NaN
-top              NaN           NaN         FF            NaN            NaN            NaN        ball           NaN      R        R           NaN           NaN           NaN           NaN           NaN           correct             NaN                 NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN            NaN           NaN           NaN           NaN              NaN
-freq             NaN           NaN      19107            NaN            NaN            NaN       35723           NaN  30626    37984           NaN           NaN           NaN           NaN           NaN             46603             NaN                 NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN            NaN           NaN           NaN           NaN              NaN
-mean        0.714254      0.667835        NaN      88.355801      -0.767139       6.008659         NaN     10.249156    NaN      NaN   2013.955055     -0.097898      0.737196     -0.028854      2.328559               NaN        0.300496            0.000112       0.016370      2.087662   -129.055345     -3.811831     -1.883322     26.770473    -22.592905      3.419796      1.604678      54.462017      2.461573      2.121986      2.268962         0.358274
-std         0.911363      0.785532        NaN       6.097503       1.978117       0.511247         NaN      3.825125    NaN      NaN      3.887315      0.906137      0.766658      1.029371      1.024375               NaN        0.229773            0.009804       0.080907      6.502968      8.841443      3.553269     10.943866      4.388387      8.917398      0.219786      0.138046       0.289037      1.549735      2.405906      2.438123         0.479498
-min         0.000000      0.000000        NaN      53.900000      -5.260000       1.120000         NaN      1.000000    NaN      NaN   2008.000000     -2.380000     -2.770000     -4.470000     -2.560000               NaN        0.000000           -0.259000      -1.142000    -19.952235   -152.571876    -16.410796    -32.170719      5.671000    -56.100000      2.530000      0.750000      52.320000      1.000000      0.000000      0.000000         0.000000
-25%         0.000000      0.000000        NaN      84.400000      -2.200000       5.730000         NaN      8.000000    NaN      NaN   2011.000000     -0.870000      0.320000     -0.820000      1.620000               NaN        0.119000            0.000000      -0.031000     -3.005706   -135.712045     -6.340288    -11.000049     23.588382    -28.482000      3.270000      1.510000      54.500000      1.000000      0.000000      0.000000         0.000000
-50%         0.000000      0.000000        NaN      89.900000      -1.530000       6.030000         NaN     12.000000    NaN      NaN   2014.000000     -0.220000      0.900000     -0.020000      2.280000               NaN        0.259000            0.000000       0.024000      3.719476   -131.290362     -4.039214     -2.785000     26.801000    -21.259000      3.420000      1.600000      54.500000      2.000000      1.000000      2.000000         0.000000
-75%         1.000000      1.000000        NaN      92.900000       1.270000       6.340000         NaN     13.000000    NaN      NaN   2017.000000      0.660000      1.310000      0.760000      3.010000               NaN        0.440000            0.000000       0.045000      6.941343   -123.314791     -1.521692      6.799000     29.793779    -15.541694      3.560000      1.690000      54.500000      3.000000      3.000000      3.000000         1.000000
-max         3.000000      2.000000        NaN     104.000000       5.600000       7.700000         NaN     14.000000    NaN      NaN   2021.000000      2.350000      2.790000      3.930000      7.610000               NaN        2.809000            0.342000       0.871000     19.479138    -78.866532     14.840440     31.849000     51.916000     -0.145196      4.460000      2.400000      56.810000     13.000000     14.000000     14.000000         1.000000
+               balls       strikes pitch_type  release_speed  release_pos_x  release_pos_z description          zone  stand p_throws         pfx_x         pfx_z       plate_x       plate_z error_in_decision  pitch_location  delta_home_win_exp  delta_run_exp           vx0           vy0           vz0            ax            ay            az        sz_top        sz_bot  release_pos_y  pitch_number    home_score    away_score  all_star_player
+count   53621.000000  53621.000000      53621   53621.000000   53621.000000   53621.000000       53621  53621.000000  53621    53621  53621.000000  53621.000000  53621.000000  53621.000000             53621    53621.000000        53621.000000   53621.000000  53621.000000  53621.000000  53621.000000  53621.000000  53621.000000  53621.000000  53621.000000  53621.000000   53621.000000  53621.000000  53621.000000  53621.000000     53621.000000
+unique           NaN           NaN         16            NaN            NaN            NaN           2           NaN      2        2           NaN           NaN           NaN           NaN                 2             NaN                 NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN            NaN           NaN           NaN           NaN              NaN
+top              NaN           NaN         FF            NaN            NaN            NaN        ball           NaN      R        R           NaN           NaN           NaN           NaN           correct             NaN                 NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN            NaN           NaN           NaN           NaN              NaN
+freq             NaN           NaN      19107            NaN            NaN            NaN       35723           NaN  30626    37984           NaN           NaN           NaN           NaN             46603             NaN                 NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN            NaN           NaN           NaN           NaN              NaN
+mean        0.714254      0.667835        NaN      88.355801      -0.767139       6.008659         NaN     10.249156    NaN      NaN     -0.097898      0.737196     -0.028854      2.328559               NaN        0.300496            0.000112       0.016370      2.087662   -129.055345     -3.811831     -1.883322     26.770473    -22.592905      3.419796      1.604678      54.462017      2.461573      2.121986      2.268962         0.358274
+std         0.911363      0.785532        NaN       6.097503       1.978117       0.511247         NaN      3.825125    NaN      NaN      0.906137      0.766658      1.029371      1.024375               NaN        0.229773            0.009804       0.080907      6.502968      8.841443      3.553269     10.943866      4.388387      8.917398      0.219786      0.138046       0.289037      1.549735      2.405906      2.438123         0.479498
+min         0.000000      0.000000        NaN      53.900000      -5.260000       1.120000         NaN      1.000000    NaN      NaN     -2.380000     -2.770000     -4.470000     -2.560000               NaN        0.000000           -0.259000      -1.142000    -19.952235   -152.571876    -16.410796    -32.170719      5.671000    -56.100000      2.530000      0.750000      52.320000      1.000000      0.000000      0.000000         0.000000
+25%         0.000000      0.000000        NaN      84.400000      -2.200000       5.730000         NaN      8.000000    NaN      NaN     -0.870000      0.320000     -0.820000      1.620000               NaN        0.119000            0.000000      -0.031000     -3.005706   -135.712045     -6.340288    -11.000049     23.588382    -28.482000      3.270000      1.510000      54.500000      1.000000      0.000000      0.000000         0.000000
+50%         0.000000      0.000000        NaN      89.900000      -1.530000       6.030000         NaN     12.000000    NaN      NaN     -0.220000      0.900000     -0.020000      2.280000               NaN        0.259000            0.000000       0.024000      3.719476   -131.290362     -4.039214     -2.785000     26.801000    -21.259000      3.420000      1.600000      54.500000      2.000000      1.000000      2.000000         0.000000
+75%         1.000000      1.000000        NaN      92.900000       1.270000       6.340000         NaN     13.000000    NaN      NaN      0.660000      1.310000      0.760000      3.010000               NaN        0.440000            0.000000       0.045000      6.941343   -123.314791     -1.521692      6.799000     29.793779    -15.541694      3.560000      1.690000      54.500000      3.000000      3.000000      3.000000         1.000000
+max         3.000000      2.000000        NaN     104.000000       5.600000       7.700000         NaN     14.000000    NaN      NaN      2.350000      2.790000      3.930000      7.610000               NaN        2.809000            0.342000       0.871000     19.479138    -78.866532     14.840440     31.849000     51.916000     -0.145196      4.460000      2.400000      56.810000     13.000000     14.000000     14.000000         1.000000
 
 === Umpire_2 ENCODED ===
 
 <class 'pandas.core.frame.DataFrame'>
 Index: 53621 entries, 0 to 53624
-Data columns (total 46 columns):
+Data columns (total 45 columns):
  #   Column                     Non-Null Count  Dtype  
 ---  ------                     --------------  -----  
  0   balls                      53621 non-null  int64  
@@ -78,77 +77,76 @@ Data columns (total 46 columns):
  3   release_pos_x              53621 non-null  float64
  4   release_pos_z              53621 non-null  float64
  5   zone                       53621 non-null  float64
- 6   game_year                  53621 non-null  int64  
- 7   pfx_x                      53621 non-null  float64
- 8   pfx_z                      53621 non-null  float64
- 9   plate_x                    53621 non-null  float64
- 10  plate_z                    53621 non-null  float64
- 11  error_in_decision          53621 non-null  int64  
- 12  pitch_location             53621 non-null  float64
- 13  delta_home_win_exp         53621 non-null  float64
- 14  delta_run_exp              53621 non-null  float64
- 15  vx0                        53621 non-null  float64
- 16  vy0                        53621 non-null  float64
- 17  vz0                        53621 non-null  float64
- 18  ax                         53621 non-null  float64
- 19  ay                         53621 non-null  float64
- 20  az                         53621 non-null  float64
- 21  sz_top                     53621 non-null  float64
- 22  sz_bot                     53621 non-null  float64
- 23  release_pos_y              53621 non-null  float64
- 24  pitch_number               53621 non-null  int64  
- 25  home_score                 53621 non-null  int64  
- 26  away_score                 53621 non-null  int64  
- 27  all_star_player            53621 non-null  float64
- 28  pitch_type_CS              53621 non-null  bool   
- 29  pitch_type_CU              53621 non-null  bool   
- 30  pitch_type_EP              53621 non-null  bool   
- 31  pitch_type_FA              53621 non-null  bool   
- 32  pitch_type_FC              53621 non-null  bool   
- 33  pitch_type_FF              53621 non-null  bool   
- 34  pitch_type_FO              53621 non-null  bool   
- 35  pitch_type_FS              53621 non-null  bool   
- 36  pitch_type_KC              53621 non-null  bool   
- 37  pitch_type_KN              53621 non-null  bool   
- 38  pitch_type_SC              53621 non-null  bool   
- 39  pitch_type_SI              53621 non-null  bool   
- 40  pitch_type_SL              53621 non-null  bool   
- 41  pitch_type_ST              53621 non-null  bool   
- 42  pitch_type_SV              53621 non-null  bool   
- 43  description_called_strike  53621 non-null  bool   
- 44  stand_R                    53621 non-null  bool   
- 45  p_throws_R                 53621 non-null  bool   
-dtypes: bool(18), float64(21), int64(7)
-memory usage: 12.8 MB
+ 6   pfx_x                      53621 non-null  float64
+ 7   pfx_z                      53621 non-null  float64
+ 8   plate_x                    53621 non-null  float64
+ 9   plate_z                    53621 non-null  float64
+ 10  error_in_decision          53621 non-null  int64  
+ 11  pitch_location             53621 non-null  float64
+ 12  delta_home_win_exp         53621 non-null  float64
+ 13  delta_run_exp              53621 non-null  float64
+ 14  vx0                        53621 non-null  float64
+ 15  vy0                        53621 non-null  float64
+ 16  vz0                        53621 non-null  float64
+ 17  ax                         53621 non-null  float64
+ 18  ay                         53621 non-null  float64
+ 19  az                         53621 non-null  float64
+ 20  sz_top                     53621 non-null  float64
+ 21  sz_bot                     53621 non-null  float64
+ 22  release_pos_y              53621 non-null  float64
+ 23  pitch_number               53621 non-null  int64  
+ 24  home_score                 53621 non-null  int64  
+ 25  away_score                 53621 non-null  int64  
+ 26  all_star_player            53621 non-null  float64
+ 27  pitch_type_CS              53621 non-null  bool   
+ 28  pitch_type_CU              53621 non-null  bool   
+ 29  pitch_type_EP              53621 non-null  bool   
+ 30  pitch_type_FA              53621 non-null  bool   
+ 31  pitch_type_FC              53621 non-null  bool   
+ 32  pitch_type_FF              53621 non-null  bool   
+ 33  pitch_type_FO              53621 non-null  bool   
+ 34  pitch_type_FS              53621 non-null  bool   
+ 35  pitch_type_KC              53621 non-null  bool   
+ 36  pitch_type_KN              53621 non-null  bool   
+ 37  pitch_type_SC              53621 non-null  bool   
+ 38  pitch_type_SI              53621 non-null  bool   
+ 39  pitch_type_SL              53621 non-null  bool   
+ 40  pitch_type_ST              53621 non-null  bool   
+ 41  pitch_type_SV              53621 non-null  bool   
+ 42  description_called_strike  53621 non-null  bool   
+ 43  stand_R                    53621 non-null  bool   
+ 44  p_throws_R                 53621 non-null  bool   
+dtypes: bool(18), float64(21), int64(6)
+memory usage: 12.4 MB
 
 
 --- Head ---
-   balls  strikes  release_speed  release_pos_x  release_pos_z  zone  game_year  pfx_x  pfx_z  plate_x  plate_z  error_in_decision  pitch_location  delta_home_win_exp  delta_run_exp       vx0         vy0       vz0      ax      ay      az  sz_top  sz_bot  release_pos_y  pitch_number  home_score  away_score  all_star_player  pitch_type_CS  pitch_type_CU  pitch_type_EP  pitch_type_FA  pitch_type_FC  pitch_type_FF  pitch_type_FO  pitch_type_FS  pitch_type_KC  pitch_type_KN  pitch_type_SC  pitch_type_SI  pitch_type_SL  pitch_type_ST  pitch_type_SV  description_called_strike  stand_R  p_throws_R
-0      0        0           83.0          -1.30           6.58  11.0       2008  -1.16   1.46    -1.22     2.67                  0           0.389                 0.0          0.035  2.837675 -121.767603 -4.463783 -11.603  28.628 -17.410    3.28    1.62           54.5             1           0           0              1.0          False          False          False          False          False          False          False          False          False          False          False           True          False          False          False                      False    False        True
-1      1        0           83.4          -1.19           6.48  14.0       2008  -1.16   1.15     0.92     1.91                  0           0.089                 0.0          0.068  7.491243 -122.088354 -5.334191 -12.703  28.455 -20.039    3.28    1.62           54.5             2           0           0              1.0          False          False          False          False          False          False          False          False          False          False          False           True          False          False          False                      False    False        True
-2      2        0           82.4          -1.21           6.47   7.0       2008  -0.86   1.35    -0.42     1.83                  1           0.210                 0.0          0.137  3.741971 -120.796594 -5.731990  -8.819  28.159 -18.308    3.28    1.62           54.5             3           0           0              1.0          False          False          False          False          False           True          False          False          False          False          False          False          False          False          False                      False    False        True
-3      3        0           81.6          -1.31           6.57   5.0       2008  -0.77   1.59    -0.21     2.51                  0           0.621                 0.0         -0.080  4.198498 -119.696214 -4.765346  -7.932  27.364 -16.623    3.28    1.62           54.5             4           0           0              1.0          False          False          False          False          False           True          False          False          False          False          False          False          False          False          False                       True    False        True
-4      0        0           84.9          -1.30           6.55  14.0       2008  -0.99   1.41     1.37     1.96                  0           0.520                 0.0          0.023  8.551403 -124.144139 -6.412107 -11.661  27.535 -16.840    3.17    1.44           54.5             1           0           0              1.0          False          False          False          False          False          False          False          False          False          False          False           True          False          False          False                      False     True        True
+   balls  strikes  release_speed  release_pos_x  release_pos_z  zone  pfx_x  pfx_z  plate_x  plate_z  error_in_decision  pitch_location  delta_home_win_exp  delta_run_exp       vx0         vy0       vz0      ax      ay      az  sz_top  sz_bot  release_pos_y  pitch_number  home_score  away_score  all_star_player  pitch_type_CS  pitch_type_CU  pitch_type_EP  pitch_type_FA  pitch_type_FC  pitch_type_FF  pitch_type_FO  pitch_type_FS  pitch_type_KC  pitch_type_KN  pitch_type_SC  pitch_type_SI  pitch_type_SL  pitch_type_ST  pitch_type_SV  description_called_strike  stand_R  p_throws_R
+0      0        0           83.0          -1.30           6.58  11.0  -1.16   1.46    -1.22     2.67                  0           0.389                 0.0          0.035  2.837675 -121.767603 -4.463783 -11.603  28.628 -17.410    3.28    1.62           54.5             1           0           0              1.0          False          False          False          False          False          False          False          False          False          False          False           True          False          False          False                      False    False        True
+1      1        0           83.4          -1.19           6.48  14.0  -1.16   1.15     0.92     1.91                  0           0.089                 0.0          0.068  7.491243 -122.088354 -5.334191 -12.703  28.455 -20.039    3.28    1.62           54.5             2           0           0              1.0          False          False          False          False          False          False          False          False          False          False          False           True          False          False          False                      False    False        True
+2      2        0           82.4          -1.21           6.47   7.0  -0.86   1.35    -0.42     1.83                  1           0.210                 0.0          0.137  3.741971 -120.796594 -5.731990  -8.819  28.159 -18.308    3.28    1.62           54.5             3           0           0              1.0          False          False          False          False          False           True          False          False          False          False          False          False          False          False          False                      False    False        True
+3      3        0           81.6          -1.31           6.57   5.0  -0.77   1.59    -0.21     2.51                  0           0.621                 0.0         -0.080  4.198498 -119.696214 -4.765346  -7.932  27.364 -16.623    3.28    1.62           54.5             4           0           0              1.0          False          False          False          False          False           True          False          False          False          False          False          False          False          False          False                       True    False        True
+4      0        0           84.9          -1.30           6.55  14.0  -0.99   1.41     1.37     1.96                  0           0.520                 0.0          0.023  8.551403 -124.144139 -6.412107 -11.661  27.535 -16.840    3.17    1.44           54.5             1           0           0              1.0          False          False          False          False          False          False          False          False          False          False          False           True          False          False          False                      False     True        True
 
 --- Describe ---
-               balls       strikes  release_speed  release_pos_x  release_pos_z          zone     game_year         pfx_x         pfx_z       plate_x       plate_z  error_in_decision  pitch_location  delta_home_win_exp  delta_run_exp           vx0           vy0           vz0            ax            ay            az        sz_top        sz_bot  release_pos_y  pitch_number    home_score    away_score  all_star_player pitch_type_CS pitch_type_CU pitch_type_EP pitch_type_FA pitch_type_FC pitch_type_FF pitch_type_FO pitch_type_FS pitch_type_KC pitch_type_KN pitch_type_SC pitch_type_SI pitch_type_SL pitch_type_ST pitch_type_SV description_called_strike stand_R p_throws_R
-count   53621.000000  53621.000000   53621.000000   53621.000000   53621.000000  53621.000000  53621.000000  53621.000000  53621.000000  53621.000000  53621.000000       53621.000000    53621.000000        53621.000000   53621.000000  53621.000000  53621.000000  53621.000000  53621.000000  53621.000000  53621.000000  53621.000000  53621.000000   53621.000000  53621.000000  53621.000000  53621.000000     53621.000000         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621                     53621   53621      53621
-unique           NaN           NaN            NaN            NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN                NaN             NaN                 NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN            NaN           NaN           NaN           NaN              NaN             2             2             2             2             2             2             2             2             2             2             2             2             2             2             2                         2       2          2
-top              NaN           NaN            NaN            NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN                NaN             NaN                 NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN            NaN           NaN           NaN           NaN              NaN         False         False         False         False         False         False         False         False         False         False         False         False         False         False         False                     False    True       True
-freq             NaN           NaN            NaN            NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN                NaN             NaN                 NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN            NaN           NaN           NaN           NaN              NaN         53617         49015         53610         53609         50560         34514         53591         52980         52693         53491         53617         41296         46153         53454         53525                     35723   30626      37984
-mean        0.714254      0.667835      88.355801      -0.767139       6.008659     10.249156   2013.955055     -0.097898      0.737196     -0.028854      2.328559           0.130882        0.300496            0.000112       0.016370      2.087662   -129.055345     -3.811831     -1.883322     26.770473    -22.592905      3.419796      1.604678      54.462017      2.461573      2.121986      2.268962         0.358274           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
-std         0.911363      0.785532       6.097503       1.978117       0.511247      3.825125      3.887315      0.906137      0.766658      1.029371      1.024375           0.337274        0.229773            0.009804       0.080907      6.502968      8.841443      3.553269     10.943866      4.388387      8.917398      0.219786      0.138046       0.289037      1.549735      2.405906      2.438123         0.479498           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
-min         0.000000      0.000000      53.900000      -5.260000       1.120000      1.000000   2008.000000     -2.380000     -2.770000     -4.470000     -2.560000           0.000000        0.000000           -0.259000      -1.142000    -19.952235   -152.571876    -16.410796    -32.170719      5.671000    -56.100000      2.530000      0.750000      52.320000      1.000000      0.000000      0.000000         0.000000           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
-25%         0.000000      0.000000      84.400000      -2.200000       5.730000      8.000000   2011.000000     -0.870000      0.320000     -0.820000      1.620000           0.000000        0.119000            0.000000      -0.031000     -3.005706   -135.712045     -6.340288    -11.000049     23.588382    -28.482000      3.270000      1.510000      54.500000      1.000000      0.000000      0.000000         0.000000           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
-50%         0.000000      0.000000      89.900000      -1.530000       6.030000     12.000000   2014.000000     -0.220000      0.900000     -0.020000      2.280000           0.000000        0.259000            0.000000       0.024000      3.719476   -131.290362     -4.039214     -2.785000     26.801000    -21.259000      3.420000      1.600000      54.500000      2.000000      1.000000      2.000000         0.000000           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
-75%         1.000000      1.000000      92.900000       1.270000       6.340000     13.000000   2017.000000      0.660000      1.310000      0.760000      3.010000           0.000000        0.440000            0.000000       0.045000      6.941343   -123.314791     -1.521692      6.799000     29.793779    -15.541694      3.560000      1.690000      54.500000      3.000000      3.000000      3.000000         1.000000           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
-max         3.000000      2.000000     104.000000       5.600000       7.700000     14.000000   2021.000000      2.350000      2.790000      3.930000      7.610000           1.000000        2.809000            0.342000       0.871000     19.479138    -78.866532     14.840440     31.849000     51.916000     -0.145196      4.460000      2.400000      56.810000     13.000000     14.000000     14.000000         1.000000           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
+               balls       strikes  release_speed  release_pos_x  release_pos_z          zone         pfx_x         pfx_z       plate_x       plate_z  error_in_decision  pitch_location  delta_home_win_exp  delta_run_exp           vx0           vy0           vz0            ax            ay            az        sz_top        sz_bot  release_pos_y  pitch_number    home_score    away_score  all_star_player pitch_type_CS pitch_type_CU pitch_type_EP pitch_type_FA pitch_type_FC pitch_type_FF pitch_type_FO pitch_type_FS pitch_type_KC pitch_type_KN pitch_type_SC pitch_type_SI pitch_type_SL pitch_type_ST pitch_type_SV description_called_strike stand_R p_throws_R
+count   53621.000000  53621.000000   53621.000000   53621.000000   53621.000000  53621.000000  53621.000000  53621.000000  53621.000000  53621.000000       53621.000000    53621.000000        53621.000000   53621.000000  53621.000000  53621.000000  53621.000000  53621.000000  53621.000000  53621.000000  53621.000000  53621.000000   53621.000000  53621.000000  53621.000000  53621.000000     53621.000000         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621                     53621   53621      53621
+unique           NaN           NaN            NaN            NaN            NaN           NaN           NaN           NaN           NaN           NaN                NaN             NaN                 NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN            NaN           NaN           NaN           NaN              NaN             2             2             2             2             2             2             2             2             2             2             2             2             2             2             2                         2       2          2
+top              NaN           NaN            NaN            NaN            NaN           NaN           NaN           NaN           NaN           NaN                NaN             NaN                 NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN            NaN           NaN           NaN           NaN              NaN         False         False         False         False         False         False         False         False         False         False         False         False         False         False         False                     False    True       True
+freq             NaN           NaN            NaN            NaN            NaN           NaN           NaN           NaN           NaN           NaN                NaN             NaN                 NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN            NaN           NaN           NaN           NaN              NaN         53617         49015         53610         53609         50560         34514         53591         52980         52693         53491         53617         41296         46153         53454         53525                     35723   30626      37984
+mean        0.714254      0.667835      88.355801      -0.767139       6.008659     10.249156     -0.097898      0.737196     -0.028854      2.328559           0.130882        0.300496            0.000112       0.016370      2.087662   -129.055345     -3.811831     -1.883322     26.770473    -22.592905      3.419796      1.604678      54.462017      2.461573      2.121986      2.268962         0.358274           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
+std         0.911363      0.785532       6.097503       1.978117       0.511247      3.825125      0.906137      0.766658      1.029371      1.024375           0.337274        0.229773            0.009804       0.080907      6.502968      8.841443      3.553269     10.943866      4.388387      8.917398      0.219786      0.138046       0.289037      1.549735      2.405906      2.438123         0.479498           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
+min         0.000000      0.000000      53.900000      -5.260000       1.120000      1.000000     -2.380000     -2.770000     -4.470000     -2.560000           0.000000        0.000000           -0.259000      -1.142000    -19.952235   -152.571876    -16.410796    -32.170719      5.671000    -56.100000      2.530000      0.750000      52.320000      1.000000      0.000000      0.000000         0.000000           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
+25%         0.000000      0.000000      84.400000      -2.200000       5.730000      8.000000     -0.870000      0.320000     -0.820000      1.620000           0.000000        0.119000            0.000000      -0.031000     -3.005706   -135.712045     -6.340288    -11.000049     23.588382    -28.482000      3.270000      1.510000      54.500000      1.000000      0.000000      0.000000         0.000000           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
+50%         0.000000      0.000000      89.900000      -1.530000       6.030000     12.000000     -0.220000      0.900000     -0.020000      2.280000           0.000000        0.259000            0.000000       0.024000      3.719476   -131.290362     -4.039214     -2.785000     26.801000    -21.259000      3.420000      1.600000      54.500000      2.000000      1.000000      2.000000         0.000000           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
+75%         1.000000      1.000000      92.900000       1.270000       6.340000     13.000000      0.660000      1.310000      0.760000      3.010000           0.000000        0.440000            0.000000       0.045000      6.941343   -123.314791     -1.521692      6.799000     29.793779    -15.541694      3.560000      1.690000      54.500000      3.000000      3.000000      3.000000         1.000000           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
+max         3.000000      2.000000     104.000000       5.600000       7.700000     14.000000      2.350000      2.790000      3.930000      7.610000           1.000000        2.809000            0.342000       0.871000     19.479138    -78.866532     14.840440     31.849000     51.916000     -0.145196      4.460000      2.400000      56.810000     13.000000     14.000000     14.000000         1.000000           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
 
 === Umpire_2 SCALED ===
 
 <class 'pandas.core.frame.DataFrame'>
 Index: 53621 entries, 0 to 53624
-Data columns (total 46 columns):
+Data columns (total 45 columns):
  #   Column                     Non-Null Count  Dtype  
 ---  ------                     --------------  -----  
  0   balls                      53621 non-null  float64
@@ -157,75 +155,74 @@ Data columns (total 46 columns):
  3   release_pos_x              53621 non-null  float64
  4   release_pos_z              53621 non-null  float64
  5   zone                       53621 non-null  float64
- 6   game_year                  53621 non-null  float64
- 7   pfx_x                      53621 non-null  float64
- 8   pfx_z                      53621 non-null  float64
- 9   plate_x                    53621 non-null  float64
- 10  plate_z                    53621 non-null  float64
- 11  error_in_decision          53621 non-null  int64  
- 12  pitch_location             53621 non-null  float64
- 13  delta_home_win_exp         53621 non-null  float64
- 14  delta_run_exp              53621 non-null  float64
- 15  vx0                        53621 non-null  float64
- 16  vy0                        53621 non-null  float64
- 17  vz0                        53621 non-null  float64
- 18  ax                         53621 non-null  float64
- 19  ay                         53621 non-null  float64
- 20  az                         53621 non-null  float64
- 21  sz_top                     53621 non-null  float64
- 22  sz_bot                     53621 non-null  float64
- 23  release_pos_y              53621 non-null  float64
- 24  pitch_number               53621 non-null  float64
- 25  home_score                 53621 non-null  float64
- 26  away_score                 53621 non-null  float64
- 27  all_star_player            53621 non-null  float64
- 28  pitch_type_CS              53621 non-null  bool   
- 29  pitch_type_CU              53621 non-null  bool   
- 30  pitch_type_EP              53621 non-null  bool   
- 31  pitch_type_FA              53621 non-null  bool   
- 32  pitch_type_FC              53621 non-null  bool   
- 33  pitch_type_FF              53621 non-null  bool   
- 34  pitch_type_FO              53621 non-null  bool   
- 35  pitch_type_FS              53621 non-null  bool   
- 36  pitch_type_KC              53621 non-null  bool   
- 37  pitch_type_KN              53621 non-null  bool   
- 38  pitch_type_SC              53621 non-null  bool   
- 39  pitch_type_SI              53621 non-null  bool   
- 40  pitch_type_SL              53621 non-null  bool   
- 41  pitch_type_ST              53621 non-null  bool   
- 42  pitch_type_SV              53621 non-null  bool   
- 43  description_called_strike  53621 non-null  bool   
- 44  stand_R                    53621 non-null  bool   
- 45  p_throws_R                 53621 non-null  bool   
-dtypes: bool(18), float64(27), int64(1)
-memory usage: 12.8 MB
+ 6   pfx_x                      53621 non-null  float64
+ 7   pfx_z                      53621 non-null  float64
+ 8   plate_x                    53621 non-null  float64
+ 9   plate_z                    53621 non-null  float64
+ 10  error_in_decision          53621 non-null  int64  
+ 11  pitch_location             53621 non-null  float64
+ 12  delta_home_win_exp         53621 non-null  float64
+ 13  delta_run_exp              53621 non-null  float64
+ 14  vx0                        53621 non-null  float64
+ 15  vy0                        53621 non-null  float64
+ 16  vz0                        53621 non-null  float64
+ 17  ax                         53621 non-null  float64
+ 18  ay                         53621 non-null  float64
+ 19  az                         53621 non-null  float64
+ 20  sz_top                     53621 non-null  float64
+ 21  sz_bot                     53621 non-null  float64
+ 22  release_pos_y              53621 non-null  float64
+ 23  pitch_number               53621 non-null  float64
+ 24  home_score                 53621 non-null  float64
+ 25  away_score                 53621 non-null  float64
+ 26  all_star_player            53621 non-null  float64
+ 27  pitch_type_CS              53621 non-null  bool   
+ 28  pitch_type_CU              53621 non-null  bool   
+ 29  pitch_type_EP              53621 non-null  bool   
+ 30  pitch_type_FA              53621 non-null  bool   
+ 31  pitch_type_FC              53621 non-null  bool   
+ 32  pitch_type_FF              53621 non-null  bool   
+ 33  pitch_type_FO              53621 non-null  bool   
+ 34  pitch_type_FS              53621 non-null  bool   
+ 35  pitch_type_KC              53621 non-null  bool   
+ 36  pitch_type_KN              53621 non-null  bool   
+ 37  pitch_type_SC              53621 non-null  bool   
+ 38  pitch_type_SI              53621 non-null  bool   
+ 39  pitch_type_SL              53621 non-null  bool   
+ 40  pitch_type_ST              53621 non-null  bool   
+ 41  pitch_type_SV              53621 non-null  bool   
+ 42  description_called_strike  53621 non-null  bool   
+ 43  stand_R                    53621 non-null  bool   
+ 44  p_throws_R                 53621 non-null  bool   
+dtypes: bool(18), float64(26), int64(1)
+memory usage: 12.4 MB
 
 
 --- Head ---
-      balls   strikes  release_speed  release_pos_x  release_pos_z      zone  game_year     pfx_x     pfx_z   plate_x   plate_z  error_in_decision  pitch_location  delta_home_win_exp  delta_run_exp       vx0       vy0       vz0        ax        ay        az    sz_top    sz_bot  release_pos_y  pitch_number  home_score  away_score  all_star_player  pitch_type_CS  pitch_type_CU  pitch_type_EP  pitch_type_FA  pitch_type_FC  pitch_type_FF  pitch_type_FO  pitch_type_FS  pitch_type_KC  pitch_type_KN  pitch_type_SC  pitch_type_SI  pitch_type_SL  pitch_type_ST  pitch_type_SV  description_called_strike  stand_R  p_throws_R
-0 -0.783728 -0.850177      -0.878368      -0.269380       1.117554  0.196294  -1.531934 -1.172132  0.942808 -1.157170  0.333319                  0        0.385184           -0.011387       0.230261  0.115335  0.824278 -0.183481 -0.888148  0.423286  0.581218 -0.636061  0.110996       0.131415     -0.943120   -0.881999   -0.930627              1.0          False          False          False          False          False          False          False          False          False          False          False           True          False          False          False                      False    False        True
-1  0.313540 -0.850177      -0.812767      -0.213772       0.921952  0.980590  -1.531934 -1.172132  0.538452  0.921788 -0.408603                  0       -0.920464           -0.011387       0.638141  0.830949  0.788000 -0.428443 -0.988662  0.383864  0.286398 -0.636061  0.110996       0.131415     -0.297843   -0.881999   -0.930627              1.0          False          False          False          False          False          False          False          False          False          False          False           True          False          False          False                      False    False        True
-2  1.410809 -0.850177      -0.976770      -0.223882       0.902392 -0.849433  -1.531934 -0.841053  0.799327 -0.379989 -0.486700                  1       -0.393853           -0.011387       1.490980  0.254395  0.934104 -0.540397 -0.633756  0.316412  0.480515 -0.636061  0.110996       0.131415      0.347435   -0.881999   -0.930627              1.0          False          False          False          False          False           True          False          False          False          False          False          False          False          False          False                      False    False        True
-3  2.508077 -0.850177      -1.107972      -0.274436       1.097994 -1.372296  -1.531934 -0.741730  1.112377 -0.175979  0.177125                  0        1.394885           -0.011387      -1.191139  0.324599  1.058562 -0.268351 -0.552705  0.135251  0.669473 -0.636061  0.110996       0.131415      0.992712   -0.881999   -0.930627              1.0          False          False          False          False          False           True          False          False          False          False          False          False          False          False          False                       True    False        True
-4 -0.783728 -0.850177      -0.566762      -0.269380       1.058874  0.980590  -1.531934 -0.984521  0.877590  1.358952 -0.359793                  0        0.955317           -0.011387       0.081941  0.993977  0.555481 -0.731805 -0.893447  0.174218  0.645139 -1.136552 -1.192931       0.131415     -0.943120   -0.881999   -0.930627              1.0          False          False          False          False          False          False          False          False          False          False          False           True          False          False          False                      False     True        True
+      balls   strikes  release_speed  release_pos_x  release_pos_z      zone     pfx_x     pfx_z   plate_x   plate_z  error_in_decision  pitch_location  delta_home_win_exp  delta_run_exp       vx0       vy0       vz0        ax        ay        az    sz_top    sz_bot  release_pos_y  pitch_number  home_score  away_score  all_star_player  pitch_type_CS  pitch_type_CU  pitch_type_EP  pitch_type_FA  pitch_type_FC  pitch_type_FF  pitch_type_FO  pitch_type_FS  pitch_type_KC  pitch_type_KN  pitch_type_SC  pitch_type_SI  pitch_type_SL  pitch_type_ST  pitch_type_SV  description_called_strike  stand_R  p_throws_R
+0 -0.783728 -0.850177      -0.878368      -0.269380       1.117554  0.196294 -1.172132  0.942808 -1.157170  0.333319                  0        0.385184           -0.011387       0.230261  0.115335  0.824278 -0.183481 -0.888148  0.423286  0.581218 -0.636061  0.110996       0.131415     -0.943120   -0.881999   -0.930627              1.0          False          False          False          False          False          False          False          False          False          False          False           True          False          False          False                      False    False        True
+1  0.313540 -0.850177      -0.812767      -0.213772       0.921952  0.980590 -1.172132  0.538452  0.921788 -0.408603                  0       -0.920464           -0.011387       0.638141  0.830949  0.788000 -0.428443 -0.988662  0.383864  0.286398 -0.636061  0.110996       0.131415     -0.297843   -0.881999   -0.930627              1.0          False          False          False          False          False          False          False          False          False          False          False           True          False          False          False                      False    False        True
+2  1.410809 -0.850177      -0.976770      -0.223882       0.902392 -0.849433 -0.841053  0.799327 -0.379989 -0.486700                  1       -0.393853           -0.011387       1.490980  0.254395  0.934104 -0.540397 -0.633756  0.316412  0.480515 -0.636061  0.110996       0.131415      0.347435   -0.881999   -0.930627              1.0          False          False          False          False          False           True          False          False          False          False          False          False          False          False          False                      False    False        True
+3  2.508077 -0.850177      -1.107972      -0.274436       1.097994 -1.372296 -0.741730  1.112377 -0.175979  0.177125                  0        1.394885           -0.011387      -1.191139  0.324599  1.058562 -0.268351 -0.552705  0.135251  0.669473 -0.636061  0.110996       0.131415      0.992712   -0.881999   -0.930627              1.0          False          False          False          False          False           True          False          False          False          False          False          False          False          False          False                       True    False        True
+4 -0.783728 -0.850177      -0.566762      -0.269380       1.058874  0.980590 -0.984521  0.877590  1.358952 -0.359793                  0        0.955317           -0.011387       0.081941  0.993977  0.555481 -0.731805 -0.893447  0.174218  0.645139 -1.136552 -1.192931       0.131415     -0.943120   -0.881999   -0.930627              1.0          False          False          False          False          False          False          False          False          False          False          False           True          False          False          False                      False     True        True
 
 --- Describe ---
-               balls       strikes  release_speed  release_pos_x  release_pos_z          zone     game_year         pfx_x         pfx_z       plate_x       plate_z  error_in_decision  pitch_location  delta_home_win_exp  delta_run_exp           vx0           vy0           vz0            ax            ay            az        sz_top        sz_bot  release_pos_y  pitch_number    home_score    away_score  all_star_player pitch_type_CS pitch_type_CU pitch_type_EP pitch_type_FA pitch_type_FC pitch_type_FF pitch_type_FO pitch_type_FS pitch_type_KC pitch_type_KN pitch_type_SC pitch_type_SI pitch_type_SL pitch_type_ST pitch_type_SV description_called_strike stand_R p_throws_R
-count   5.362100e+04  5.362100e+04   5.362100e+04   5.362100e+04   5.362100e+04  5.362100e+04  5.362100e+04  5.362100e+04  5.362100e+04  5.362100e+04  5.362100e+04       53621.000000    5.362100e+04        5.362100e+04   5.362100e+04  5.362100e+04  5.362100e+04  5.362100e+04  5.362100e+04  5.362100e+04  5.362100e+04  5.362100e+04  5.362100e+04   5.362100e+04  5.362100e+04  5.362100e+04  5.362100e+04     53621.000000         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621                     53621   53621      53621
-unique           NaN           NaN            NaN            NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN                NaN             NaN                 NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN            NaN           NaN           NaN           NaN              NaN             2             2             2             2             2             2             2             2             2             2             2             2             2             2             2                         2       2          2
-top              NaN           NaN            NaN            NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN                NaN             NaN                 NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN            NaN           NaN           NaN           NaN              NaN         False         False         False         False         False         False         False         False         False         False         False         False         False         False         False                     False    True       True
-freq             NaN           NaN            NaN            NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN                NaN             NaN                 NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN            NaN           NaN           NaN           NaN              NaN         53617         49015         53610         53609         50560         34514         53591         52980         52693         53491         53617         41296         46153         53454         53525                     35723   30626      37984
-mean   -4.929447e-17  1.590144e-18  -2.220902e-15  -4.346394e-17   4.918846e-16  1.515938e-16  1.726685e-14  2.120192e-18 -4.240385e-17 -1.378125e-17  1.060096e-17           0.130882   -5.777524e-17        2.285832e-17  -8.215746e-18 -2.968269e-17  7.394171e-16 -1.484135e-17 -2.544231e-17  4.940048e-16 -4.924147e-16 -2.438221e-15 -2.374616e-16  -5.427693e-15 -2.438221e-17  1.272115e-17 -5.512500e-17         0.358274           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
-std     1.000009e+00  1.000009e+00   1.000009e+00   1.000009e+00   1.000009e+00  1.000009e+00  1.000009e+00  1.000009e+00  1.000009e+00  1.000009e+00  1.000009e+00           0.337274    1.000009e+00        1.000009e+00   1.000009e+00  1.000009e+00  1.000009e+00  1.000009e+00  1.000009e+00  1.000009e+00  1.000009e+00  1.000009e+00  1.000009e+00   1.000009e+00  1.000009e+00  1.000009e+00  1.000009e+00         0.479498           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
-min    -7.837280e-01 -8.501771e-01  -5.650858e+00  -2.271303e+00  -9.562321e+00 -2.418024e+00 -1.531934e+00 -2.518520e+00 -4.574700e+00 -4.314466e+00 -4.772280e+00           0.000000   -1.307807e+00       -2.643017e+01  -1.431745e+01 -3.389238e+00 -2.659832e+00 -3.545773e+00 -2.767549e+00 -4.808070e+00 -3.757532e+00 -4.048497e+00 -6.191316e+00  -7.410953e+00 -9.431200e-01 -8.819986e-01 -9.306270e-01         0.000000           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
-25%    -7.837280e-01 -8.501771e-01  -6.487636e-01  -7.243628e-01  -5.450635e-01 -5.880010e-01 -7.601859e-01 -8.520892e-01 -5.441796e-01 -7.685795e-01 -6.917054e-01           0.000000   -7.898995e-01       -1.138715e-02  -5.854988e-01 -7.832448e-01 -7.529045e-01 -7.115928e-01 -8.330523e-01 -7.251230e-01 -6.604112e-01 -6.815605e-01 -6.858483e-01   1.314152e-01 -9.431200e-01 -8.819986e-01 -9.306270e-01         0.000000           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
-50%    -7.837280e-01 -8.501771e-01   2.532534e-01  -3.856537e-01   4.174287e-02  4.577263e-01  1.156209e-02 -1.347513e-01  2.123582e-01  8.601078e-03 -4.740412e-02           0.000000   -1.805969e-01       -1.138715e-02   9.430095e-02  2.509362e-01 -2.527910e-01 -6.399301e-02 -8.239197e-02  6.956479e-03  1.495859e-01  9.265971e-04 -3.388503e-02   1.314152e-01 -2.978426e-01 -4.663509e-01 -1.103161e-01         0.000000           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
-75%     3.135403e-01  4.228568e-01   7.452627e-01   1.029847e+00   6.481094e-01  7.191581e-01  7.833101e-01  8.364138e-01  7.471521e-01  7.663522e-01  6.652322e-01           0.000000    6.071442e-01       -1.138715e-02   3.538608e-01  7.463864e-01  6.492840e-01  6.445223e-01  7.933579e-01  6.889399e-01  7.907325e-01  6.379146e-01  6.180782e-01   1.314152e-01  3.474349e-01  3.649446e-01  2.998393e-01         1.000000           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
-max     2.508077e+00  1.695891e+00   2.565697e+00   3.218817e+00   3.308298e+00  9.805899e-01  1.812307e+00  2.701492e+00  2.677628e+00  3.845930e+00  5.155817e+00           1.000000    1.091741e+01        3.487365e+01   1.056322e+01  2.674416e+00  5.676594e+00  5.249377e+00  3.082333e+00  5.730070e+00  2.517317e+00  4.732837e+00  5.761344e+00   8.123557e+00  6.800210e+00  4.937070e+00  4.811549e+00         1.000000           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
+               balls       strikes  release_speed  release_pos_x  release_pos_z          zone         pfx_x         pfx_z       plate_x       plate_z  error_in_decision  pitch_location  delta_home_win_exp  delta_run_exp           vx0           vy0           vz0            ax            ay            az        sz_top        sz_bot  release_pos_y  pitch_number    home_score    away_score  all_star_player pitch_type_CS pitch_type_CU pitch_type_EP pitch_type_FA pitch_type_FC pitch_type_FF pitch_type_FO pitch_type_FS pitch_type_KC pitch_type_KN pitch_type_SC pitch_type_SI pitch_type_SL pitch_type_ST pitch_type_SV description_called_strike stand_R p_throws_R
+count   5.362100e+04  5.362100e+04   5.362100e+04   5.362100e+04   5.362100e+04  5.362100e+04  5.362100e+04  5.362100e+04  5.362100e+04  5.362100e+04       53621.000000    5.362100e+04        5.362100e+04   5.362100e+04  5.362100e+04  5.362100e+04  5.362100e+04  5.362100e+04  5.362100e+04  5.362100e+04  5.362100e+04  5.362100e+04   5.362100e+04  5.362100e+04  5.362100e+04  5.362100e+04     53621.000000         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621         53621                     53621   53621      53621
+unique           NaN           NaN            NaN            NaN            NaN           NaN           NaN           NaN           NaN           NaN                NaN             NaN                 NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN            NaN           NaN           NaN           NaN              NaN             2             2             2             2             2             2             2             2             2             2             2             2             2             2             2                         2       2          2
+top              NaN           NaN            NaN            NaN            NaN           NaN           NaN           NaN           NaN           NaN                NaN             NaN                 NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN            NaN           NaN           NaN           NaN              NaN         False         False         False         False         False         False         False         False         False         False         False         False         False         False         False                     False    True       True
+freq             NaN           NaN            NaN            NaN            NaN           NaN           NaN           NaN           NaN           NaN                NaN             NaN                 NaN            NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN            NaN           NaN           NaN           NaN              NaN         53617         49015         53610         53609         50560         34514         53591         52980         52693         53491         53617         41296         46153         53454         53525                     35723   30626      37984
+mean   -4.929447e-17  1.590144e-18  -2.220902e-15  -4.346394e-17   4.918846e-16  1.515938e-16  2.120192e-18 -4.240385e-17 -1.378125e-17  1.060096e-17           0.130882   -5.777524e-17        2.285832e-17  -8.215746e-18 -2.968269e-17  7.394171e-16 -1.484135e-17 -2.544231e-17  4.940048e-16 -4.924147e-16 -2.438221e-15 -2.374616e-16  -5.427693e-15 -2.438221e-17  1.272115e-17 -5.512500e-17         0.358274           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
+std     1.000009e+00  1.000009e+00   1.000009e+00   1.000009e+00   1.000009e+00  1.000009e+00  1.000009e+00  1.000009e+00  1.000009e+00  1.000009e+00           0.337274    1.000009e+00        1.000009e+00   1.000009e+00  1.000009e+00  1.000009e+00  1.000009e+00  1.000009e+00  1.000009e+00  1.000009e+00  1.000009e+00  1.000009e+00   1.000009e+00  1.000009e+00  1.000009e+00  1.000009e+00         0.479498           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
+min    -7.837280e-01 -8.501771e-01  -5.650858e+00  -2.271303e+00  -9.562321e+00 -2.418024e+00 -2.518520e+00 -4.574700e+00 -4.314466e+00 -4.772280e+00           0.000000   -1.307807e+00       -2.643017e+01  -1.431745e+01 -3.389238e+00 -2.659832e+00 -3.545773e+00 -2.767549e+00 -4.808070e+00 -3.757532e+00 -4.048497e+00 -6.191316e+00  -7.410953e+00 -9.431200e-01 -8.819986e-01 -9.306270e-01         0.000000           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
+25%    -7.837280e-01 -8.501771e-01  -6.487636e-01  -7.243628e-01  -5.450635e-01 -5.880010e-01 -8.520892e-01 -5.441796e-01 -7.685795e-01 -6.917054e-01           0.000000   -7.898995e-01       -1.138715e-02  -5.854988e-01 -7.832448e-01 -7.529045e-01 -7.115928e-01 -8.330523e-01 -7.251230e-01 -6.604112e-01 -6.815605e-01 -6.858483e-01   1.314152e-01 -9.431200e-01 -8.819986e-01 -9.306270e-01         0.000000           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
+50%    -7.837280e-01 -8.501771e-01   2.532534e-01  -3.856537e-01   4.174287e-02  4.577263e-01 -1.347513e-01  2.123582e-01  8.601078e-03 -4.740412e-02           0.000000   -1.805969e-01       -1.138715e-02   9.430095e-02  2.509362e-01 -2.527910e-01 -6.399301e-02 -8.239197e-02  6.956479e-03  1.495859e-01  9.265971e-04 -3.388503e-02   1.314152e-01 -2.978426e-01 -4.663509e-01 -1.103161e-01         0.000000           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
+75%     3.135403e-01  4.228568e-01   7.452627e-01   1.029847e+00   6.481094e-01  7.191581e-01  8.364138e-01  7.471521e-01  7.663522e-01  6.652322e-01           0.000000    6.071442e-01       -1.138715e-02   3.538608e-01  7.463864e-01  6.492840e-01  6.445223e-01  7.933579e-01  6.889399e-01  7.907325e-01  6.379146e-01  6.180782e-01   1.314152e-01  3.474349e-01  3.649446e-01  2.998393e-01         1.000000           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
+max     2.508077e+00  1.695891e+00   2.565697e+00   3.218817e+00   3.308298e+00  9.805899e-01  2.701492e+00  2.677628e+00  3.845930e+00  5.155817e+00           1.000000    1.091741e+01        3.487365e+01   1.056322e+01  2.674416e+00  5.676594e+00  5.249377e+00  3.082333e+00  5.730070e+00  2.517317e+00  4.732837e+00  5.761344e+00   8.123557e+00  6.800210e+00  4.937070e+00  4.811549e+00         1.000000           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                       NaN     NaN        NaN
 
 === FINAL SUMMARY ===
 
-Umpire_2 cleaned → shape: (53621, 46) | Target distribution:
+Umpire_2 cleaned → shape: (53621, 45) | Target distribution:
 error_in_decision
 0    46603
 1     7018
