@@ -56,4 +56,4 @@ We build several Bayesian logistic models of precision for each umpire, each con
 ### Target
 - **description**: Description of the resulting pitch.  
 &nbsp; - **description_called_strike** *(encoded)*: Indicates if the pitch was called a strike `0` or ball `1`.
-&nbsp; - **error_in_decision** *(encoded)*: Binary target variable. `0` indicates the umpire made an incorrect call, `1` indicates a correct call.  
+- **error_in_decision** *(encoded)*: Binary target variable. `0` indicates the umpire made an incorrect call, `1` indicates a correct call.  
