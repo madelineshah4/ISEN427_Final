@@ -1,0 +1,131 @@
+
+
+
+---------- Printing 1_all_feats Summary ----------
+                      mean     sd  hdi_2.5%  hdi_97.5%  mcse_mean  mcse_sd  \
+beta_plate_x        -0.628  1.814    -3.469      3.485      0.188    0.131   
+beta_pitch_type_CH   1.148  2.128    -3.309      4.565      0.234    0.169   
+beta_pitch_location -1.639  1.672    -4.865      1.590      0.183    0.115   
+beta_strikes         0.030  2.073    -3.518      3.944      0.231    0.126   
+beta_pitch_type_FO  -1.037  1.781    -3.995      2.442      0.243    0.111   
+beta_pitch_type_FF   1.136  2.184    -2.107      5.096      0.187    0.079   
+beta_pitch_type_EP  -0.403  2.066    -4.379      3.532      0.216    0.163   
+beta_pitch_type_KC  -1.212  2.280    -5.637      2.277      0.249    0.157   
+beta_balls           0.194  2.032    -4.700      3.247      0.186    0.160   
+beta_p_throws_R      0.158  2.132    -4.618      3.363      0.248    0.195   
+beta_pitch_type_ST   1.025  2.013    -2.059      5.744      0.183    0.114   
+beta_plate_z        -0.723  1.929    -4.314      3.340      0.200    0.160   
+beta_pitch_type_CU   1.028  1.868    -1.915      4.356      0.181    0.094   
+beta_pitch_type_CS  -0.024  1.808    -3.213      3.509      0.159    0.123   
+beta_pitch_type_FC  -0.331  2.071    -4.916      3.092      0.201    0.151   
+beta_vz0            -0.175  2.037    -3.812      3.643      0.247    0.111   
+beta_pitch_type_KN  -0.866  1.873    -4.366      2.823      0.246    0.110   
+beta_pitch_type_FS   1.308  2.119    -2.453      4.923      0.224    0.189   
+beta_edge_distance   1.060  2.191    -2.706      5.466      0.229    0.151   
+beta_pfx_z          -0.216  1.760    -2.882      3.806      0.192    0.102   
+beta_pitch_type_SV  -0.949  1.955    -4.314      3.225      0.192    0.155   
+beta_pitch_type_FA   0.898  2.217    -3.371      5.338      0.162    0.208   
+beta_zone            0.719  2.161    -3.179      4.571      0.205    0.136   
+beta_pitch_type_SL  -0.963  1.772    -4.119      1.911      0.154    0.089   
+beta_pitch_type_SC  -0.966  1.990    -4.591      2.925      0.199    0.137   
+beta_pfx_x           1.237  2.005    -2.709      4.658      0.219    0.153   
+beta_pitch_type_SI  -1.037  2.131    -4.193      3.626      0.252    0.154   
+beta_stand_R        -0.130  1.883    -3.485      3.150      0.166    0.148   
+beta_vx0             0.039  1.987    -3.942      3.673      0.194    0.135   
+beta_vy0             0.166  1.927    -3.414      4.218      0.238    0.133   
+
+                     ess_bulk  ess_tail  r_hat  
+beta_plate_x             96.0      77.0    NaN  
+beta_pitch_type_CH       80.0      77.0    NaN  
+beta_pitch_location      85.0      94.0    NaN  
+beta_strikes             81.0      76.0    NaN  
+beta_pitch_type_FO       51.0     102.0    NaN  
+beta_pitch_type_FF      130.0      98.0    NaN  
+beta_pitch_type_EP       93.0      78.0    NaN  
+beta_pitch_type_KC       84.0      78.0    NaN  
+beta_balls              114.0      78.0    NaN  
+beta_p_throws_R          78.0      59.0    NaN  
+beta_pitch_type_ST      127.0      40.0    NaN  
+beta_plate_z             95.0     115.0    NaN  
+beta_pitch_type_CU      107.0     102.0    NaN  
+beta_pitch_type_CS      126.0      77.0    NaN  
+beta_pitch_type_FC      112.0     112.0    NaN  
+beta_vz0                 72.0      93.0    NaN  
+beta_pitch_type_KN       58.0      64.0    NaN  
+beta_pitch_type_FS       93.0      93.0    NaN  
+beta_edge_distance       92.0      52.0    NaN  
+beta_pfx_z               81.0     112.0    NaN  
+beta_pitch_type_SV      113.0      90.0    NaN  
+beta_pitch_type_FA      186.0     112.0    NaN  
+beta_zone               107.0      71.0    NaN  
+beta_pitch_type_SL      126.0     117.0    NaN  
+beta_pitch_type_SC       95.0      52.0    NaN  
+beta_pfx_x               81.0      77.0    NaN  
+beta_pitch_type_SI       73.0      57.0    NaN  
+beta_stand_R            127.0      71.0    NaN  
+beta_vx0                108.0     104.0    NaN  
+beta_vy0                 70.0     117.0    NaN  
+
+
+
+---------- Printing 2_pitch_types Summary ----------
+                     mean     sd  hdi_2.5%  hdi_97.5%  mcse_mean  mcse_sd  \
+beta_pitch_type_CH  0.984  1.896    -2.796      4.108      0.179    0.096   
+beta_pitch_type_FO -0.577  1.905    -4.158      2.693      0.179    0.110   
+beta_pitch_type_FF  0.734  1.990    -3.376      4.026      0.204    0.153   
+beta_pitch_type_EP -0.896  2.014    -4.917      2.597      0.181    0.209   
+beta_pitch_type_KC -1.403  1.872    -4.979      1.910      0.171    0.129   
+beta_pitch_type_ST  1.064  1.919    -2.332      4.851      0.234    0.132   
+beta_pitch_type_CU  1.445  1.973    -2.337      4.876      0.187    0.167   
+beta_pitch_type_CS  0.124  2.136    -4.656      3.674      0.236    0.139   
+beta_pitch_type_FC -0.671  1.979    -4.571      2.363      0.178    0.130   
+beta_pitch_type_KN -1.165  1.698    -3.695      2.456      0.184    0.102   
+beta_pitch_type_FS  0.730  1.899    -3.247      3.911      0.208    0.126   
+beta_pitch_type_SV -0.741  1.933    -4.399      3.138      0.187    0.120   
+beta_pitch_type_FA  1.396  1.735    -2.259      4.655      0.188    0.111   
+beta_pitch_type_SL -0.949  2.070    -4.121      3.674      0.213    0.131   
+beta_pitch_type_SC -1.483  1.752    -4.805      2.110      0.127    0.130   
+beta_pitch_type_SI -1.247  1.985    -4.455      2.483      0.214    0.181   
+
+                    ess_bulk  ess_tail  r_hat  
+beta_pitch_type_CH     110.0      93.0    NaN  
+beta_pitch_type_FO     115.0     113.0    NaN  
+beta_pitch_type_FF      94.0     117.0    NaN  
+beta_pitch_type_EP     136.0      77.0    NaN  
+beta_pitch_type_KC     123.0      94.0    NaN  
+beta_pitch_type_ST      67.0     102.0    NaN  
+beta_pitch_type_CU     108.0      97.0    NaN  
+beta_pitch_type_CS      81.0     108.0    NaN  
+beta_pitch_type_FC     129.0     117.0    NaN  
+beta_pitch_type_KN      84.0      66.0    NaN  
+beta_pitch_type_FS      84.0      78.0    NaN  
+beta_pitch_type_SV     108.0     112.0    NaN  
+beta_pitch_type_FA      86.0     102.0    NaN  
+beta_pitch_type_SL      93.0      52.0    NaN  
+beta_pitch_type_SC     200.0     104.0    NaN  
+beta_pitch_type_SI      81.0     112.0    NaN  
+
+
+
+---------- Printing 3_phys_feats Summary ----------
+                      mean     sd  hdi_2.5%  hdi_97.5%  mcse_mean  mcse_sd  \
+beta_zone            0.771  2.064    -3.455      4.158      0.171    0.136   
+beta_plate_x        -0.592  1.857    -4.824      2.324      0.192    0.120   
+beta_vx0            -0.197  1.844    -3.954      2.791      0.221    0.106   
+beta_pitch_location -1.982  2.469    -6.617      2.480      0.241    0.185   
+beta_pfx_x           1.063  1.869    -2.619      4.676      0.206    0.160   
+beta_pfx_z          -0.006  1.991    -3.656      3.927      0.191    0.135   
+beta_vz0            -0.074  2.022    -3.658      3.521      0.202    0.123   
+beta_plate_z        -0.721  1.982    -4.602      2.763      0.189    0.127   
+beta_vy0            -0.001  2.039    -3.148      4.382      0.174    0.120   
+
+                     ess_bulk  ess_tail  r_hat  
+beta_zone               145.0     112.0    NaN  
+beta_plate_x             96.0      57.0    NaN  
+beta_vx0                 72.0      23.0    NaN  
+beta_pitch_location     108.0      89.0    NaN  
+beta_pfx_x               82.0      81.0    NaN  
+beta_pfx_z              107.0     102.0    NaN  
+beta_vz0                 94.0      77.0    NaN  
+beta_plate_z            110.0      78.0    NaN  
+beta_vy0                130.0      93.0    NaN  
