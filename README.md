@@ -5,6 +5,7 @@ In this project, we build a Bayesian logistic model to analyze the precision of 
 We build several Bayesian logistic models of precision for each umpire, each containing different subsets of important features. Then, we compare the models using the posterior predictive and determine the most relevant features in an umpire's decision.
 
 ## Column Descriptions
+- The x axis represents horizontal position, y represents distance from pitcher to catcher, and z represents the height of the ball.
 
 ### Count Information
 - **balls**: Pre-pitch number of balls in count.  
